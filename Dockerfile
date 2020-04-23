@@ -1,4 +1,4 @@
-FROM gitlab/gitlab-ce:12.10.0-ee.0
+FROM gitlab/gitlab-ee:12.10.0-ee.0
 
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - && \
     echo "deb http://apt.postgresql.org/pub/repos/apt/ $(. /etc/os-release && echo $VERSION_CODENAME)-pgdg main" | tee  /etc/apt/sources.list.d/pgdg.list && \
